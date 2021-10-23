@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan</title>
+</head>
+<div>
+
+    <body style="font-family: Arial, Helvetica, sans-serif; width: 100%px;border: 1px solid;">
+        <div style="height: 50px;background-color: rgb(207, 207, 207); ">
+            <ul style="list-style-type: none; padding-top: 12px;text-align: center;">
+                <li style="float: left; width: 237px;text-align: center;"><a href="#">Home</a> |</li>
+                <li style="float: left; width: 237px;text-align: center;"><a href="#">Generated Link</a> |</li>
+                <li style="float: left; width: 237px;text-align: center;"><a href="#">Transaction History</a> |</li>
+                <li style="float: left; width: 237px;text-align: center;"><a href="#">Policy</a> |</li>
+                <li style="float: left; width: 237px;text-align: center;"><a href="#">Logout</a></li>
+        </div>
+        </ul>
+        <div
+            style="width: 270px; min-height: 560px;float: left; padding-top: 20px;padding-bottom: 20px;padding-left: 10px;padding-right: 20px">
+            <form action="/client.php" method="post" enctype="multipart/form-data">
+                <label><img
+                        src=
+                        alt="" width="260px"><br>
+                    <input type="file" name="photo" id=""></label>
+            </form>
+        </div>
+
+        <div
+            style="width: 620px;min-height: 560px;float: left;    padding-top: 20px;padding-left: 20px;padding-right: 10px;padding-bottom: 20px; ">
+            <table cellspacing="15">
+                <tr>
+                    <td>Title here</td>
+                    <td>:</td>
+                    <td><input type="text" id="Title" name="Title" placeholder="Please fill Title" value=""></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td><input type="number" id="number" name="number" placeholder="Please fill Acc number" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td>:</td>
+                    <td><input type="text" name="bank" list="bank"></td>
+                    <datalist id="bank">
+                        <option value="BCA"></option>
+                        <option value="BRI"></option>
+                        <option value="BANK MANDIRI"></option>
+                        <option value="BI"></option>
+                    </datalist></td>
+                <tr>
+                    <td>Account holder</td>
+                    <td>:</td>
+                    <td><input type="text" id="hold" name="hold" placeholder="Please fill Acc holder" value=""></td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td><input type="number" id="number" name="number" min="1" max="3" value=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="color: green;">
+                        <form action="/action_page.php">
+                            <input type="checkbox" name="mobilephone"> <label for="mobilephone">Send to Mobile
+                                Phone</label>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="color: green;">
+                        <form action="/action_page.php">
+                            <input type="checkbox" name="toemail"> <label for="toemail">Send to Email</label>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send to Mobile phone</td>
+                    <td>:</td>
+                    <td><input type="number" id="send" name="send" placeholder="Please fill number phone" value=""></td>
+                </tr>
+                <tr>
+                    <td>Send to Email</td>
+                    <td>:</td>
+                    <td><input type="email" id="sendmail" name="sendmail" placeholder="Please fill acc Email" value="">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button style="background-color: green; color: aliceblue;">Generate Nobr Link</button>
+        </div>
+    </body>
+
+</html>
